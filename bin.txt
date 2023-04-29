@@ -1,0 +1,19 @@
+var getValue = document.getElementsByClassName("contenedor");
+        if (getValue.value !="") {
+            getValue.value = "";
+        }
+
+
+
+        var str = document.getElementById("text").value;
+        encriptedStr = str.replace(/(?:e|E|i|I|a|A|o|ó|O|u|U)/g, matched => mapObj1[matched]);
+        
+        console.log(encriptedStr);
+
+
+
+
+        decriptedStr = encriptedStr.replace(/(?:enter|ENTER|imes|IMES|ai|AI|ober|OBER|ufat|UFAT)/g, matched => mapObj2[matched]);
+
+        console.log("MENSAJE DESENCRIPTADO:")
+        console.log(decriptedStr);
